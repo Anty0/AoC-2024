@@ -105,7 +105,7 @@ fun day18part2(input: Sequence<String>): Any {
 
   for (i in 0 until map.data.size) {
     val path = map.path(i)
-    map.asImage(path, i, 2).showITermImage()
+//    map.asImage(path, i, 2).showITermImage()
     if (path != null) {
       continue
     }

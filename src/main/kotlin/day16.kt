@@ -105,9 +105,9 @@ fun day16part1(input: Sequence<String>): Any {
 
 fun day16part2(input: Sequence<String>): Any {
   val map = input.map { it.toList() }.toList().extractInfo()
-  map.asImage(null, 10).showITermImage()
+//  map.asImage(null, 10).showITermImage()
   val paths = map.path(true)
-  paths.forEach { map.asImage(it, 10).showITermImage() }
+//  paths.forEach { map.asImage(it, 10).showITermImage() }
   return paths.flatMap {
     generateSequence(it) { it.prev }.map { it.x to it.y }
   }.toSet().size

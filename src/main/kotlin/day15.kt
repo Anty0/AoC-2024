@@ -127,7 +127,7 @@ private fun State.applyCommand(command: Char): State {
 
 private fun State.applyCommands(commands: List<Char>): State {
   return commands.fold(this) { acc, c ->
-    acc.asImage(2).showITermImage()
+//    acc.asImage(2).showITermImage()
     acc.applyCommand(c)
   }
 }

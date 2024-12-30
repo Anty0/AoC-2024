@@ -103,8 +103,8 @@ val solutions = mapOf(
 )
 
 fun main() {
-//  all()
-  last()
+  all()
+//  last()
 //  one(17, 2)
 //  exact(20, 1, "20-0-1.test.txt")
 //  exact(15, 2, "15-0-0.orig.txt")

@@ -31,8 +31,8 @@ fun day25part1(input: Sequence<String>): Int {
   val structures = lines.parseStructures().toList()
   val keys = structures.filter { !it.isLock }.map { it.pins }
   val locks = structures.filter { it.isLock }.map { it.pins }
-  println("keys: $keys")
-  println("locks: $locks")
+//  println("keys: $keys")
+//  println("locks: $locks")
   return locks.sumOf { lock ->
     keys.count { key ->
       lock.zip(key).all { (a, b) -> a + b <= 5 }
